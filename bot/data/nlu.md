@@ -621,3 +621,13 @@
 - Vc tem algum propósito?
 - Como que vc pode me ser útil?
 - Me fale mais sobre você.
+
+## intent:harry_potter
+- voce ja assistiu harry potter?
+- voce conhece harry potter?
+- vamos conversar de harry potter
+- o que voce sabe sobre harry potter?
+- ja ouviu falar sobre hogwarts?
+- vc ja leu harry potter?
+- livros de harry potter
+- filmes de harry potter
