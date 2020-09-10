@@ -39,6 +39,7 @@ intents:
 - testa_acoes
 - informa_cpf
 - objetivo
+- friends
 entities:
 - religiao
 - esporte
@@ -224,6 +225,14 @@ responses:
       \ em muito em exemplos! no meu repositório tem muita coisa legal que vc pode\
       \ aprender! Acessa lá: https://github.com/lappis-unb/rasa-ptbr-boilerplate\n\
       \n Ah e eu sou Open Source!!!"
+  utter_friends:
+  - text: "Friends é uma série muito divertida sobre os amigos Monica, Rachel, Phoebe, Joey, Chandler e Ross!\n"
+  - text: "Friends é uma sitcom que se passa em Nova York\n
+            I'll be there for you... :)\n"
+  - text: "A série Friends conta várias histórias de um grupo de amigos que gosta de tomar café\
+            \ juntos no Central Perk ;)\n"
+  utter_temporadas_friends:
+  - text: "A minha temporada favorita é a sétima, eu adoro um casamento ;) <3"
 actions:
 - action_teste
 - action_cpf

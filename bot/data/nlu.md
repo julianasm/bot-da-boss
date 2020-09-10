@@ -621,3 +621,16 @@
 - Vc tem algum propósito?
 - Como que vc pode me ser útil?
 - Me fale mais sobre você.
+
+## intent:friends
+- O que é friends
+- O que eh friends 
+- Me fale sobre friends
+- Me diga sobre friends 
+- A série friends
+- Quero saber mais sobre friends
+- Me conta sobre friends
+- Vamos conversar sobre friends
+- Vamos falar sobre friends
+- Fale sobre friends
+- Conte sobre friends

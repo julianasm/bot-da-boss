@@ -366,3 +366,14 @@
 ## objetivo
 * objetivo
     - utter_objetivo
+
+## friends
+* friends
+    - utter_friends
+
+## cumprimentar_friends
+* cumprimentar
+    - utter_cumprimentar
+* friends
+    - utter_friends
+    - utter_temporadas_friends
