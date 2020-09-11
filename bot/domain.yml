@@ -227,11 +227,11 @@ responses:
       \n Ah e eu sou Open Source!!!"
   utter_harry_potter:
     - text: "Eu sou fã de Harry Potter, já li todos os livros, e também vi os filmes.\
-      \n Se eu estudasse em Hogwarts seria da Corvinal."
+      \n\nSe eu estudasse em Hogwarts seria da Corvinal."
     - text: "Adoro Harry Potter! Eu sou da Corvinal, sabia?\
-      \n O meu favorito é o Prisioneiro de Azkaban! Quem concorda respira :P"
+      \n\nO meu favorito é o Prisioneiro de Azkaban! Quem concorda respira :P"
     - text: "Eu adoro maratonar os filmes de Harry Potter!\
-      \n Você sabia que são 8 filmes? Isso fora os livros... que são 7!"
+      \n\nVocê sabia que são 8 filmes? Isso fora os livros... que são 7!"
 actions:
 - action_teste
 - action_cpf
