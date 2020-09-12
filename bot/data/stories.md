@@ -366,3 +366,8 @@
 ## objetivo
 * objetivo
     - utter_objetivo
+
+## avatar
+* avatar
+    - utter_avatar
+    - utter_continuar_conversa

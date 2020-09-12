@@ -2,6 +2,7 @@
 - olá
 - Ola
 - Oi
+- oi
 - bom dia
 - boa tarde
 - boa noite
@@ -621,3 +622,18 @@
 - Vc tem algum propósito?
 - Como que vc pode me ser útil?
 - Me fale mais sobre você.
+
+## intent:avatar
+- O que é Avatar?
+- O que eh Avatar?
+- Vc conhece Avatar?
+- Você conhece Avatar?
+- Vc já ouviu falar de Avatar?
+- Você já ouviu falar de Avatar?
+- Eu gosto de Avatar
+- Me fala sobre Avatar
+- Fala sobre Avatar
+- Avatar
+- avatar
+- Você já viu Avatar?
+- Vc já viu Avatar?

@@ -39,6 +39,7 @@ intents:
 - testa_acoes
 - informa_cpf
 - objetivo
+- avatar
 entities:
 - religiao
 - esporte
@@ -224,6 +225,15 @@ responses:
       \ em muito em exemplos! no meu repositório tem muita coisa legal que vc pode\
       \ aprender! Acessa lá: https://github.com/lappis-unb/rasa-ptbr-boilerplate\n\
       \n Ah e eu sou Open Source!!!"
+  utter_avatar:
+  - text: "Água... Terra... Fogo... Ar... Espera um momento, estamos falando do mesmo Avatar?
+    \nMelhor ficar quieta senão vou acabar soltando spoiler.... "
+  - text: "Há muito tempo as nações viviam em paz e harmonia, e ai tudo mudou quando a nação do fogo atacou.
+    \nAté meus bits se arrepiaram com essa lembrança, você também?\n"
+  - text: "Amo Avatar! Eu sou dobradora de metal, mas você já devia saber, né, afinal tenho um exercíto de componentes que me fazem existir.\n"
+  - text: "Eu vi Avatar na TV Globinho, quando ainda era só uma ideia na cabeça de alguém....
+    \nEu queria ser o Avatar ou uma dominadora de água, ia poder manter toda água longe de mim
+    \nE assim nunca mais ia correr o risco de programadores desatentos jogando café em cima de mim :P\n"
 actions:
 - action_teste
 - action_cpf
