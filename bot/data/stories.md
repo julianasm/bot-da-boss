@@ -366,3 +366,10 @@
 ## objetivo
 * objetivo
     - utter_objetivo
+
+## path_daria
+* cumprimentar
+    - utter_cumprimentar
+* daria
+    - utter_daria
+    - utter_continuar_conversa

@@ -621,3 +621,20 @@
 - Vc tem algum propósito?
 - Como que vc pode me ser útil?
 - Me fale mais sobre você.
+
+## intent:daria
+- Vc conhece Daria?
+- Você já assistiu Daria?
+- Quem é Daria?
+- Quem é Daria Morgendorffer?
+- Daria
+- série Daria
+- Daria Morgendorffer
+- Daria MTV
+- daria mtv
+- série daria
+- vc já viu Daria?
+- você já viu o desenho Daria?
+- desenho Daria
+- animação daria
+- daria

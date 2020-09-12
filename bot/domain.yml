@@ -39,6 +39,7 @@ intents:
 - testa_acoes
 - informa_cpf
 - objetivo
+- daria
 entities:
 - religiao
 - esporte
@@ -64,6 +65,7 @@ entities:
 - bff
 - historia
 - cpf
+- daria
 slots:
   cpf:
     type: text
@@ -224,6 +226,17 @@ responses:
       \ em muito em exemplos! no meu repositório tem muita coisa legal que vc pode\
       \ aprender! Acessa lá: https://github.com/lappis-unb/rasa-ptbr-boilerplate\n\
       \n Ah e eu sou Open Source!!!"
+  utter_daria:
+  - text: "Acho que nunca ouvi falar... 
+        \nAh! Aquela garota com cara de nerd! Ela é legal."
+  - text: "Daria é uma série de animação americana criada para a MTV em 1997. 
+        \nNão passa mais na TV, mas a internet existe para resolver esse problema!" 
+  - text: "Daria é uma adolescente feminista que não se encaixa entre os jovens de sua escola. 
+        \nMas ela tem uma melhor amiga e parceira de hmm... infortúnios, Jane."
+  - text: "Daria Morgendorffer é a filha mais velha de um casal sem noção.
+        \nComo se não fosse o suficiente, sua irmã, Quin, é a garota popular do colégio."
+  - text: "Daria é uma série americana de sucesso!
+        \nNa verdade não, mas isso não é importante, certo?"
 actions:
 - action_teste
 - action_cpf
