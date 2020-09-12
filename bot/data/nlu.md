@@ -621,3 +621,13 @@
 - Vc tem algum propósito?
 - Como que vc pode me ser útil?
 - Me fale mais sobre você.
+
+## intent:anime
+- Me fale sobre animes
+- Você gosta de anime?
+- Já assistiu anime?
+- me indica um anime
+- anime favorito
+- anime preferido
+- tipo de anime
+- quais animes
