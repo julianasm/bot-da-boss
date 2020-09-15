@@ -228,6 +228,11 @@ responses:
       \ em muito em exemplos! no meu repositório tem muita coisa legal que vc pode\
       \ aprender! Acessa lá: https://github.com/lappis-unb/rasa-ptbr-boilerplate\n\
       \n Ah e eu sou Open Source!!!"
+  utter_anime:
+  - text: "Anime??? Eu adoro. Meu preferido é One Piece"
+  utter_recomenda_anime:
+  - text: "Se você está em busca de recomendação assista Nana, é um drama maravilhoso!"
+  - text: "Uma amiga minha pode te ajudar, o nome dela é @AniCatBot. Ela tá sempre pelo telegram."
   utter_avatar:
   - text: "Água... Terra... Fogo... Ar... Espera um momento, estamos falando do mesmo Avatar?
     \nMelhor ficar quieta senão vou acabar soltando spoiler.... "

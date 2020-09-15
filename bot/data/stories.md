@@ -367,6 +367,17 @@
 * objetivo
     - utter_objetivo
 
+## falar_de_anime
+* anime
+    - utter_anime
+
+## recomendacao_anime
+* tudo_bem
+    - utter_tudo_bem
+* anime
+    - utter_anime
+    - utter_recomenda_anime
+
 ## avatar
 * avatar
     - utter_avatar
