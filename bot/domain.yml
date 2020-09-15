@@ -40,6 +40,7 @@ intents:
 - informa_cpf
 - objetivo
 - friends
+- o_que_e_boss
 entities:
 - religiao
 - esporte
@@ -233,6 +234,11 @@ responses:
             \ juntos no Central Perk ;)\n"
   utter_temporadas_friends:
   - text: "A minha temporada favorita é a sétima, eu adoro um casamento ;) <3"
+  utter_boss_apresenta:
+  - text: "A BOSS é uma iniciativa legal"
+  - text: "A BOSS apresenta software livre para mulheres maravilhosas"
+  utter_talk_like_a_boss:
+  - text: "A Talk like a boss é uma série de entrevistas com mulheres incríveis"
 actions:
 - action_teste
 - action_cpf
