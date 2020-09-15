@@ -637,3 +637,39 @@
 - avatar
 - Você já viu Avatar?
 - Vc já viu Avatar?
+
+## intent:harry_potter
+- voce ja assistiu harry potter?
+- voce conhece harry potter?
+- vamos conversar de harry potter
+- o que voce sabe sobre harry potter?
+- ja ouviu falar sobre hogwarts?
+- vc ja leu harry potter?
+- livros de harry potter
+- filmes de harry potter
+
+## intent:friends
+- O que é friends
+- O que eh friends 
+- Me fale sobre friends
+- Me diga sobre friends 
+- A série friends
+- Quero saber mais sobre friends
+- Me conta sobre friends
+- Vamos conversar sobre friends
+- Vamos falar sobre friends
+- Fale sobre friends
+- Conte sobre friends
+
+## intent:o_que_e_boss
+- O que é a boss?
+- Quem é boss?
+- o que e boss
+- quem eh boss
+- a boss é o que
+- o que a boss faz
+- quero saber mais sobre a boss
+- me diga mais sobre a boss
+- me fala mais sobre a boss
+- me dá informações sobre a boss
+- A iniciativa boss
