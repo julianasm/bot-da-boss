@@ -373,3 +373,45 @@
 * daria
     - utter_daria
     - utter_continuar_conversa
+
+## falar_de_anime
+* anime
+    - utter_anime
+
+## recomendacao_anime
+* tudo_bem
+    - utter_tudo_bem
+* anime
+    - utter_anime
+    - utter_recomenda_anime
+
+## avatar
+* avatar
+    - utter_avatar
+    - utter_continuar_conversa
+
+## harry_potter
+* harry_potter
+    - utter_harry_potter
+
+## friends
+* friends
+    - utter_friends
+
+## cumprimentar_friends
+* cumprimentar
+    - utter_cumprimentar
+* friends
+    - utter_friends
+    - utter_temporadas_friends
+
+## falar_da_boss
+* o_que_e_boss
+    - utter_boss_apresenta
+    - utter_talk_like_a_boss
+
+## falar_da_boss_com_conversinha
+* tudo_bem
+    - utter_tudo_bem
+* o_que_e_boss
+    - utter_boss_apresenta
