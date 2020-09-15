@@ -621,3 +621,16 @@
 - Vc tem algum propósito?
 - Como que vc pode me ser útil?
 - Me fale mais sobre você.
+
+## intent:o_que_e_boss
+- O que é a boss?
+- Quem é boss?
+- o que e boss
+- quem eh boss
+- a boss é o que
+- o que a boss faz
+- quero saber mais sobre a boss
+- me diga mais sobre a boss
+- me fala mais sobre a boss
+- me dá informações sobre a boss
+- A iniciativa boss

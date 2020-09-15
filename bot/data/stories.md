@@ -366,3 +366,14 @@
 ## objetivo
 * objetivo
     - utter_objetivo
+
+## falar_da_boss
+* o_que_e_boss
+    - utter_boss_apresenta
+    - utter_talk_like_a_boss
+
+## falar_da_boss_com_conversinha
+* tudo_bem
+    - utter_tudo_bem
+* o_que_e_boss
+    - utter_boss_apresenta

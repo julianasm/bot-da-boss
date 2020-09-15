@@ -39,6 +39,7 @@ intents:
 - testa_acoes
 - informa_cpf
 - objetivo
+- o_que_e_boss
 entities:
 - religiao
 - esporte
@@ -224,6 +225,11 @@ responses:
       \ em muito em exemplos! no meu repositório tem muita coisa legal que vc pode\
       \ aprender! Acessa lá: https://github.com/lappis-unb/rasa-ptbr-boilerplate\n\
       \n Ah e eu sou Open Source!!!"
+  utter_boss_apresenta:
+  - text: "A BOSS é uma iniciativa legal"
+  - text: "A BOSS apresenta software livre para mulheres maravilhosas"
+  utter_talk_like_a_boss:
+  - text: "A Talk like a boss é uma série de entrevistas com mulheres incríveis"
 actions:
 - action_teste
 - action_cpf
