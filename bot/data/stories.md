@@ -367,6 +367,17 @@
 * objetivo
     - utter_objetivo
 
+## friends
+* friends
+    - utter_friends
+
+## cumprimentar_friends
+* cumprimentar
+    - utter_cumprimentar
+* friends
+    - utter_friends
+    - utter_temporadas_friends
+
 ## falar_da_boss
 * o_que_e_boss
     - utter_boss_apresenta
