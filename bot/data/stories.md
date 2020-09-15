@@ -367,6 +367,11 @@
 * objetivo
     - utter_objetivo
 
+## avatar
+* avatar
+    - utter_avatar
+    - utter_continuar_conversa
+
 ## harry_potter
 * harry_potter
     - utter_harry_potter
