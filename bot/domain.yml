@@ -40,6 +40,8 @@ intents:
 - informa_cpf
 - objetivo
 - harry_potter
+- friends
+- o_que_e_boss
 entities:
 - religiao
 - esporte
@@ -232,6 +234,19 @@ responses:
       \n\nO meu favorito é o Prisioneiro de Azkaban! Quem concorda respira :P"
     - text: "Eu adoro maratonar os filmes de Harry Potter!\
       \n\nVocê sabia que são 8 filmes? Isso fora os livros... que são 7!"
+  utter_friends:
+  - text: "Friends é uma série muito divertida sobre os amigos Monica, Rachel, Phoebe, Joey, Chandler e Ross!\n"
+  - text: "Friends é uma sitcom que se passa em Nova York\n
+            I'll be there for you... :)\n"
+  - text: "A série Friends conta várias histórias de um grupo de amigos que gosta de tomar café\
+            \ juntos no Central Perk ;)\n"
+  utter_temporadas_friends:
+  - text: "A minha temporada favorita é a sétima, eu adoro um casamento ;) <3"
+  utter_boss_apresenta:
+  - text: "A BOSS é uma iniciativa legal"
+  - text: "A BOSS apresenta software livre para mulheres maravilhosas"
+  utter_talk_like_a_boss:
+  - text: "A Talk like a boss é uma série de entrevistas com mulheres incríveis"
 actions:
 - action_teste
 - action_cpf
