@@ -57,11 +57,8 @@ entities:
 - historia
 - telefone
 - cpf
-<<<<<<< HEAD
 - daria
-=======
 - dada_nascimento
->>>>>>> master-lappis
 slots:
   telefone:
     type: unfeaturized
@@ -228,7 +225,7 @@ responses:
   - text: "A BOSS é uma iniciativa legal"
   - text: "A BOSS apresenta software livre para mulheres maravilhosas"
   utter_talk_like_a_boss:
-  - text: "A Talk like a boss é uma série de entrevistas com mulheres incríveis"
+  - text: "A Talk like a boss é uma série de entrevistas com mulheres incríveis\
       \n Ah e eu sou Open Source ;)"
   utter_pergunta_cancelar:
     - text: Entendi. Você deseja cancelar?
@@ -249,7 +246,7 @@ responses:
   utter_forms_cancelado:
     - text: Ok, forms cancelado. Podemos voltar a conversar sobre outros assuntos ;)
 actions:
-- action_teste
-- action_telefone
+  - action_teste
+  - action_telefone
 forms:
   - login_form
