@@ -246,7 +246,7 @@ responses:
   utter_forms_cancelado:
     - text: Ok, forms cancelado. Podemos voltar a conversar sobre outros assuntos ;)
 actions:
-  - action_teste
-  - action_telefone
+- action_teste
+- action_telefone
 forms:
   - login_form
