@@ -10,6 +10,8 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 
+import requests
+
 
 class ActionTeste(Action):
     def name(self) -> Text:
@@ -46,3 +48,23 @@ class ActionTelefone(Action):
         except ValueError:
             dispatcher.utter_message(ValueError)
         return [SlotSet("telefone", telefone)]
+
+
+class ActionAdvices(Action):
+    def name(self) -> Text:
+        return "action_pedir_conselho"
+
+    def run(self, dispatcher, tracker, domain):
+
+        nome = tracker.get_slot('nome')
+
+        req = requests.request('GET', "https://api.adviceslip.com/advice")
+        conselho = req.json()["slip"]["advice"]
+    
+        try:
+            if nome:
+                dispatcher.utter_message("{} olha que conselho legal: {}".format(nome, conselho))
+            else:
+                dispatcher.utter_message("Olha que conselho legal: {}".format(conselho))
+        except ValueError:
+            dispatcher.utter_message(ValueError)

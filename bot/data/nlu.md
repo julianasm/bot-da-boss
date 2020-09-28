@@ -420,8 +420,6 @@
 - quais animes
 
 ## intent:avatar
-- O que é Avatar?
-- O que eh Avatar?
 - Vc conhece Avatar?
 - Você conhece Avatar?
 - Vc já ouviu falar de Avatar?
@@ -445,8 +443,6 @@
 - filmes de harry potter
 
 ## intent:friends
-- O que é friends
-- O que eh friends 
 - Me fale sobre friends
 - Me diga sobre friends 
 - A série friends
@@ -503,3 +499,21 @@
 - esqueça os meus dados
 - remova meu CPF e data de nascimento
 - limpar dados
+
+## intent:pedir_conselho
+- Me diga um conselho
+- Me de um conselho
+- Me dê um conselho
+- queria um conselho
+- qual conselho você me dá
+- qual conselho você me da
+- conselho
+
+## intent:informar_nome
+- O meu nome é [Ana](nome)
+- meu nome é [Luzia](nome)
+- Me chamo [Maria Carolina](nome)
+- me chamo [João](nome)
+- Pode me chamar de [Amanda](nome)
+- Se refira a mim como [Marianna](nome)
+- me chamam de [bruna](nome)

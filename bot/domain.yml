@@ -38,6 +38,9 @@ intents:
 - cancelar
 - request_login
 - limpar_slots
+- pedir_conselho
+- anime
+- informar_nome
 entities:
 - religiao
 - time
@@ -59,6 +62,7 @@ entities:
 - cpf
 - daria
 - dada_nascimento
+- nome
 slots:
   telefone:
     type: unfeaturized
@@ -66,6 +70,8 @@ slots:
     type: unfeaturized
   data_nascimento:
     type: unfeaturized
+  nome:
+    type: text
 responses:
   utter_fallback:
   - text: "Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender\
@@ -245,8 +251,11 @@ responses:
     - text: Ótimo, seus dados estão armazenado nos meus slots. Terminei o formulário ;)
   utter_forms_cancelado:
     - text: Ok, forms cancelado. Podemos voltar a conversar sobre outros assuntos ;)
+  utter_informar_nome: 
+    - text: "Legal {nome}!"
 actions:
 - action_teste
 - action_telefone
+- action_pedir_conselho
 forms:
   - login_form
