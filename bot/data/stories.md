@@ -354,3 +354,15 @@
 ## story_limpar_slots
 * limpar_slots
     - action_restart
+
+## pedir_conselho
+* cumprimentar
+    - utter_cumprimentar
+* pedir_conselho
+    - action_pedir_conselho
+
+## informar_nome
+* cumprimentar
+    - utter_cumprimentar
+* informar_nome
+    - utter_informar_nome
