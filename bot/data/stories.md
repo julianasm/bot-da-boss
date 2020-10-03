@@ -366,3 +366,10 @@
     - utter_cumprimentar
 * informar_nome
     - utter_informar_nome
+
+## casa_hogwarts
+* cumprimentar
+    - utter_cumprimentar
+* casa_hogwarts
+    - utter_chapeu_seletor
+    - action_sorting_hat

@@ -41,6 +41,7 @@ intents:
 - pedir_conselho
 - anime
 - informar_nome
+- casa_hogwarts
 entities:
 - religiao
 - time
@@ -60,7 +61,6 @@ entities:
 - historia
 - telefone
 - cpf
-- daria
 - dada_nascimento
 - nome
 slots:
@@ -253,9 +253,15 @@ responses:
     - text: Ok, forms cancelado. Podemos voltar a conversar sobre outros assuntos ;)
   utter_informar_nome: 
     - text: "Legal {nome}!"
+  utter_chapeu_seletor:
+    - text: É difícil.. Muito difícil. Pensando bem, acho que...
+    - text: Em qual casa te colocar...? É melhor que seja...
+    - text: Estou vendo que não vai ser fácil. Bom, se tem certeza...
+    - text: Sonserina? Grifinória? Acho que...
 actions:
 - action_teste
 - action_telefone
 - action_pedir_conselho
+- action_sorting_hat
 forms:
   - login_form
