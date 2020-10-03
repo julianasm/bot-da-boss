@@ -68,3 +68,22 @@ class ActionAdvices(Action):
                 dispatcher.utter_message("Olha que conselho legal: {}".format(conselho))
         except ValueError:
             dispatcher.utter_message(ValueError)
+
+class ActionSortingHat(Action):
+    def name(self) -> Text:
+        return "action_sorting_hat"
+
+    def run(self, dispatcher, tracker, domain):
+
+        nome = tracker.get_slot('nome')
+
+        req = requests.get("https://www.potterapi.com/v1/sortingHat")
+        casa = req.json()
+
+        try:
+            if nome:
+                dispatcher.utter_message("{} Sua casa de Hogwarts é: {}".format(nome, casa))
+            else:
+                dispatcher.utter_message("Sua casa de Hogwarts: {}".format(casa))
+        except ValueError:
+            dispatcher.utter_message(ValueError)

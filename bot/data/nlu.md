@@ -397,7 +397,6 @@
 - Você já assistiu Daria?
 - Quem é Daria?
 - Quem é Daria Morgendorffer?
-- Daria
 - série Daria
 - Daria Morgendorffer
 - Daria MTV
@@ -407,7 +406,6 @@
 - você já viu o desenho Daria?
 - desenho Daria
 - animação daria
-- daria
 
 ## intent:anime
 - Me fale sobre animes
@@ -517,3 +515,17 @@
 - Pode me chamar de [Amanda](nome)
 - Se refira a mim como [Marianna](nome)
 - me chamam de [bruna](nome)
+- Se refira a mim como [Brenda](nome)
+- me chamam de [Flor](nome)
+
+## intent:casa_hogwarts
+- Quero saber minha casa de Hogwarts
+- Qual a minha casa de Hogwarts
+- minha casa de hogwarts
+- Sortear casa de Hogwarts
+- Usar chapéu seletor
+- Descobrir minha casa de hogwarts com o chapéu seletor
+- chapéu seletor de hogwarts
+- Saber minha casa de hogwarts
+- Encontrar minha casa de hogwarts
+- Como saber qual a minha casa de hogwarts
