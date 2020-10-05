@@ -12,6 +12,8 @@ from rasa_sdk.events import SlotSet
 
 import requests
 
+from random import randint
+
 
 class ActionTeste(Action):
     def name(self) -> Text:
@@ -85,5 +87,18 @@ class ActionSortingHat(Action):
                 dispatcher.utter_message("{} Sua casa de Hogwarts é: {}".format(nome, casa))
             else:
                 dispatcher.utter_message("Sua casa de Hogwarts: {}".format(casa))
+        except ValueError:
+            dispatcher.utter_message(ValueError)
+
+class ActionCatFacts(Action):
+    def name(self) -> Text:
+        return "action_cat_facts"
+    
+    def run(self, dispatcher, tracker, domain):
+        req = requests.request('GET', "https://cat-fact.herokuapp.com/facts")
+        fato = req.json()["all"][randint(1, 20)]["text"]
+
+        try:
+            dispatcher.utter_message("{}".format(fato))
         except ValueError:
             dispatcher.utter_message(ValueError)
