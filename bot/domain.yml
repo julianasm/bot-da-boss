@@ -61,7 +61,7 @@ entities:
 - historia
 - telefone
 - cpf
-- dada_nascimento
+- data_nascimento
 - nome
 slots:
   telefone:
