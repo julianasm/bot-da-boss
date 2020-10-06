@@ -42,6 +42,7 @@ intents:
 - anime
 - informar_nome
 - casa_hogwarts
+- fatos_sobre_gatos
 entities:
 - religiao
 - time
@@ -63,6 +64,7 @@ entities:
 - cpf
 - data_nascimento
 - nome
+- gato
 slots:
   telefone:
     type: unfeaturized
@@ -258,10 +260,17 @@ responses:
     - text: Em qual casa te colocar...? É melhor que seja...
     - text: Estou vendo que não vai ser fácil. Bom, se tem certeza...
     - text: Sonserina? Grifinória? Acho que...
+  utter_fato_sobre_gatos:
+    - text: Aqui vai um fato sobre gato...
+    - text: Uma coisa legal sobre gatos...
+    - text: Um fato sobre gatinhos...
+
 actions:
 - action_teste
 - action_telefone
 - action_pedir_conselho
 - action_sorting_hat
+- action_cat_facts
+
 forms:
   - login_form

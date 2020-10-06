@@ -529,3 +529,15 @@
 - Saber minha casa de hogwarts
 - Encontrar minha casa de hogwarts
 - Como saber qual a minha casa de hogwarts
+
+## intent:fatos_sobre_gatos
+- Me conte um fato de [gato](gato)
+- Quero saber sobre [gatos](gato)
+- Me fala um fato de [gatos](gato)
+- Vamos conversar sobre [gatos](gato)
+- Me conte sobre [gatinhos](gato)
+- Falar sobre [gatinhos](gato)
+- Conversar sobre [gatos](gato)
+- Quero saber um fato sobre [gato](gato)
+- quero saber de [gatinhos](gato)
+- um fato de [gato](gato)
