@@ -74,6 +74,8 @@ slots:
     type: unfeaturized
   nome:
     type: text
+  fatos_sobre_gatos:
+    type: list
 responses:
   utter_fallback:
   - text: "Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender\

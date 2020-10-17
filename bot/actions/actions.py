@@ -93,12 +93,31 @@ class ActionSortingHat(Action):
 class ActionCatFacts(Action):
     def name(self) -> Text:
         return "action_cat_facts"
-    
-    def run(self, dispatcher, tracker, domain):
-        req = requests.request('GET', "https://cat-fact.herokuapp.com/facts")
-        fato = req.json()["all"][randint(1, 20)]["text"]
 
-        try:
-            dispatcher.utter_message("{}".format(fato))
-        except ValueError:
-            dispatcher.utter_message(ValueError)
+    def run(self, dispatcher, tracker, domain):
+
+        if len(tracker.get_slot("fatos_sobre_gatos")) == 0:
+            req = requests.request('GET', "https://cat-fact.herokuapp.com/facts")
+            lista = []
+            for n in range(500):
+                lista[n] = req.json()["all"][randint(0, 499)]["text"]
+            
+            fato = lista[randint(0, 499)]
+            
+            try:
+                dispatcher.utter_message("{}".format(fato))
+            except ValueError:
+                dispatcher.utter_message(ValueError)
+            return [SlotSet("fatos_sobre_gatos", lista)]
+        else:
+            fato = tracker.get_slot("fatos_sobre_gatos")[randint(0, 499)]
+            try:
+                dispatcher.utter_message("{}".format(fato))
+            except ValueError:
+                dispatcher.utter_message(ValueError)
+            return []
+        
+        #req = requests.request('GET', "https://cat-fact.herokuapp.com/facts")
+        #fato = req.json()["all"][randint(1, 20)]["text"]
+
+        
