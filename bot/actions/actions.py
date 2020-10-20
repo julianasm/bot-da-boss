@@ -4,6 +4,7 @@
 # Veja o guia na documentação do RASA em:
 # https://rasa.com/docs/rasa/core/actions/#custom-actions/
 
+
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
@@ -13,7 +14,8 @@ from rasa_sdk.events import SlotSet
 import requests
 
 from random import randint
-
+import logging
+logger = logging.getLogger(__name__)
 
 class ActionTeste(Action):
     def name(self) -> Text:
@@ -49,7 +51,7 @@ class ActionTelefone(Action):
             dispatcher.utter_message("O seu telefone é {}?".format(telefone))
         except ValueError:
             dispatcher.utter_message(ValueError)
-        return [SlotSet("telefone", telefone)]
+        return [SlotSet("nome", telefone)]
 
 
 class ActionAdvices(Action):
@@ -102,12 +104,17 @@ class ActionCatFacts(Action):
         
         for n in range(3):
             lista.append(req.json()["all"][n]["text"])
+        
+        logger.info(tracker.get_slot("fatos_sobre_gatos"))
+        logger.info(tracker.get_slot("nome"))
+        dispatcher.utter_message("Tô fazendo request:")  
+        
+        return[SlotSet("fatos_sobre_gatos", [1, 2, 3])] 
 
-        SlotSet("fatos_sobre_gatos", lista) 
-        fato = lista[randint(0, 2)]
+        #print(tracker.get_slot("fatos_sobre_gatos"))
         #fato = tracker.get_slot("fatos_sobre_gatos")[0]
         
-        dispatcher.utter_message("Tô fazendo request: {}".format(fato))    
+          
         
         #req = requests.request('GET', "https://cat-fact.herokuapp.com/facts")
         #fato = req.json()["all"][randint(1, 20)]["text"]
