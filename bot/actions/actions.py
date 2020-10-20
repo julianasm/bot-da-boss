@@ -97,26 +97,59 @@ class ActionCatFacts(Action):
         return "action_cat_facts"
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message("Cheguei aqui")
-
-        req = requests.request('GET', "https://cat-fact.herokuapp.com/facts")
-        lista = []
-        
-        for n in range(3):
-            lista.append(req.json()["all"][n]["text"])
-        
-        logger.info(tracker.get_slot("fatos_sobre_gatos"))
-        logger.info(tracker.get_slot("nome"))
-        dispatcher.utter_message("Tô fazendo request:")  
-        
-        return[SlotSet("fatos_sobre_gatos", [1, 2, 3])] 
+        if tracker.get_slot("fatos_sobre_gatos") == None:
+            req = requests.request('GET', "https://cat-fact.herokuapp.com/facts")
+            lista = []
+            for n in range(200):
+                lista.append(req.json()["all"][n]["text"])
+         
+            fato = lista[randint(0, 199)]
+         
+            try:
+                 dispatcher.utter_message("{}".format(fato))
+            except ValueError:
+                 dispatcher.utter_message(ValueError)
+            return [SlotSet("fatos_sobre_gatos", lista)]
+        else:
+            fato = tracker.get_slot("fatos_sobre_gatos")[randint(0, 199)]
+            try:
+                dispatcher.utter_message("{}".format(fato))
+            except ValueError:
+                dispatcher.utter_message(ValueError)
+            return []
 
         #print(tracker.get_slot("fatos_sobre_gatos"))
         #fato = tracker.get_slot("fatos_sobre_gatos")[0]
         
-          
-        
         #req = requests.request('GET', "https://cat-fact.herokuapp.com/facts")
         #fato = req.json()["all"][randint(1, 20)]["text"]
+
+# class ActionCatFacts(Action):
+#     def name(self) -> Text:
+#         return "action_cat_facts"
+
+#     def run(self, dispatcher, tracker, domain):
+
+#         if len(tracker.get_slot("fatos_sobre_gatos")) == 0:
+#             req = requests.request('GET', "https://cat-fact.herokuapp.com/facts")
+#             lista = []
+#             for n in range(3):
+#                 lista.append(req.json()["all"][n]["text"])
+            
+#             fato = lista[randint(0, 2)]
+            
+#             try:
+#                 dispatcher.utter_message("{}".format(fato))
+#             except ValueError:
+#                 dispatcher.utter_message(ValueError)
+#             return [SlotSet("fatos_sobre_gatos", lista)]
+#         else:
+#             fato = tracker.get_slot("fatos_sobre_gatos")[randint(0, 2)]
+#             try:
+#                 dispatcher.utter_message("{}".format(fato))
+#             except ValueError:
+#                 dispatcher.utter_message(ValueError)
+#             return []   
+
 
         
