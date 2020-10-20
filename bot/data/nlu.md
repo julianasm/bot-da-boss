@@ -541,3 +541,14 @@
 - Quero saber um fato sobre [gato](gato)
 - quero saber de [gatinhos](gato)
 - um fato de [gato](gato)
+- quero conversar sobre [gatinhos](gato)
+- vc pode falar de [gatos](gato)?
+- vc quer conversar sobre [gato](gato)?
+- você pode me dizer um fato dos [gatos](gato)?
+- me conta algo sobre [gatos](gato)
+- Me fala de [gatinhos](gato)
+- Me diga um fato de [gatos](gato)
+- Um fato de [gatinhos](gato)
+- Quero saber algo dos [gatos](gato)
+- O que voce sabe sobre [gatinho](gato?)
+- o que vc sabe sobre [gatos](gato)?
