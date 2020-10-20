@@ -100,10 +100,10 @@ class ActionCatFacts(Action):
         if tracker.get_slot("fatos_sobre_gatos") == None:
             req = requests.request('GET', "https://cat-fact.herokuapp.com/facts")
             lista = []
-            for n in range(200):
+            for n in range(20):
                 lista.append(req.json()["all"][n]["text"])
          
-            fato = lista[randint(0, 199)]
+            fato = lista[randint(0, 19)]
          
             try:
                  dispatcher.utter_message("{}".format(fato))
@@ -111,7 +111,7 @@ class ActionCatFacts(Action):
                  dispatcher.utter_message(ValueError)
             return [SlotSet("fatos_sobre_gatos", lista)]
         else:
-            fato = tracker.get_slot("fatos_sobre_gatos")[randint(0, 199)]
+            fato = tracker.get_slot("fatos_sobre_gatos")[randint(0, 19)]
             try:
                 dispatcher.utter_message("{}".format(fato))
             except ValueError:
