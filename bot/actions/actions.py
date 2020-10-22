@@ -4,6 +4,7 @@
 # Veja o guia na documentação do RASA em:
 # https://rasa.com/docs/rasa/core/actions/#custom-actions/
 
+
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
@@ -13,7 +14,6 @@ from rasa_sdk.events import SlotSet
 import requests
 
 from random import randint
-
 
 class ActionTeste(Action):
     def name(self) -> Text:
@@ -93,12 +93,27 @@ class ActionSortingHat(Action):
 class ActionCatFacts(Action):
     def name(self) -> Text:
         return "action_cat_facts"
-    
-    def run(self, dispatcher, tracker, domain):
-        req = requests.request('GET', "https://cat-fact.herokuapp.com/facts")
-        fato = req.json()["all"][randint(1, 20)]["text"]
 
-        try:
-            dispatcher.utter_message("{}".format(fato))
-        except ValueError:
-            dispatcher.utter_message(ValueError)
+    def run(self, dispatcher, tracker, domain):
+        if tracker.get_slot("fatos_sobre_gatos") == None:
+            req = requests.request('GET', "https://cat-fact.herokuapp.com/facts")
+            lista = []
+            for n in range(20):
+                lista.append(req.json()["all"][n]["text"])
+         
+            fato = lista[randint(0, 19)]
+         
+            try:
+                 dispatcher.utter_message("{}".format(fato))
+            except ValueError:
+                 dispatcher.utter_message(ValueError)
+            return [SlotSet("fatos_sobre_gatos", lista)]
+        else:
+            fato = tracker.get_slot("fatos_sobre_gatos")[randint(0, 19)]
+            try:
+                dispatcher.utter_message("{}".format(fato))
+            except ValueError:
+                dispatcher.utter_message(ValueError)
+            return []
+
+        
