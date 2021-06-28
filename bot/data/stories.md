@@ -378,3 +378,9 @@
 * fatos_sobre_gatos
     - utter_fato_sobre_gatos
     - action_cat_facts
+
+## story_falar_de_programacao
+* cumprimentar
+    - utter_cumprimentar
+* falar_de_programacao
+    - utter_falar_de_programacao

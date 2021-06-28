@@ -552,3 +552,16 @@
 - Quero saber algo dos [gatos](gato)
 - O que voce sabe sobre [gatinho](gato?)
 - o que vc sabe sobre [gatos](gato)?
+
+## intent:falar_de_programacao
+- Me diga algo interessante sobre [programacao] (programacao)
+- Me diga um pouco sobre [Javascript] (programacao)
+- Me diga um pouco sobre [Python] (programacao)
+- Me diga um pouco sobre [Java] (programacao)
+- O que é [programacao](programacao)?
+- Vc sabe o que eh [programacao](programacao)?
+- Voce sabe o que e [programacao](programacao)?
+- Para que serve [programacao](programacao)?
+- Pra que serve [programacao] (programacao)?
+- me conta uma coisa sobre [programacao](programacao)
+- me fala um pouco sobre [programacao](programacao)

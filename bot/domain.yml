@@ -43,6 +43,7 @@ intents:
 - informar_nome
 - casa_hogwarts
 - fatos_sobre_gatos
+- falar_de_programacao
 entities:
 - religiao
 - time
@@ -65,6 +66,7 @@ entities:
 - data_nascimento
 - nome
 - gato
+- programacao
 slots:
   telefone:
     type: unfeaturized
@@ -266,6 +268,15 @@ responses:
     - text: Aqui vai um fato sobre gato...
     - text: Uma coisa legal sobre gatos...
     - text: Um fato sobre gatinhos...
+  utter_falar_de_programacao:
+   - text: "Aprender programar é aprender resolver problemas com código de uma
+    \n linguagem de programação. Mas não é dominar a linguagem de programação."
+   - text: "JavaScript é uma linguagem de programação interpretada estruturada,
+   \n de script em alto nível com tipagem dinâmica fraca e multiparadigma. "
+   - text: "Python é uma linguagem de programação de alto nível,
+   \n interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. "
+   - text: "Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por
+   \n uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems."
 
 actions:
 - action_teste
