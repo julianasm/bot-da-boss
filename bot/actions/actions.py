@@ -116,4 +116,9 @@ class ActionCatFacts(Action):
                 dispatcher.utter_message(ValueError)
             return []
 
-        
+    class ActionCatFacts(Action):
+        def name(self) -> Text:
+            return "action_cat_facts"
+
+        def run(self, dispatcher, tracker, domain):
+            pass
